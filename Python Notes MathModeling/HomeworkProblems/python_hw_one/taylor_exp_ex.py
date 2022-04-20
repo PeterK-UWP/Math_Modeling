@@ -14,4 +14,3 @@ print(f' approximation of e^x with {n} terms is:')
 print(f'                  {sum:0.4f}')
 e = exp(x)
 print(f' e^x is given as: {e:0.4f}')
-
