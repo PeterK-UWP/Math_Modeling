@@ -1,4 +1,4 @@
-# problem 1
+# problem 1 complete
 # write a program that gets quadratic roots accurately even if ac << b^2 like in eq (3)
 from math import *
 
@@ -14,7 +14,7 @@ while True:
     print()
     D = sqrt(D2)
     x1 = (-b - D) / (2 * a)
-    x2 = (-b + D) / (2 * a)
+    x2 = (2 * a) / (-b - D)
     print("x1=", x1, " ", "x2=", x2)
 
 # sol: mult by the conjugate
