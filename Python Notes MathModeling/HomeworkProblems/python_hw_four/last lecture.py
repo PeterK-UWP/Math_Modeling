@@ -23,8 +23,8 @@ mp.show()
 # N = N0 * exp(-lambda * t)
 # t1/2 = ln(2)/lambda
 # monte carlo
-from numpy import
-from random import
+from numpy import *
+from random import *
 import matplotlib.pyplot as mp
 N0 = 500
 N0temp = N0
