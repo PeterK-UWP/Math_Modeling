@@ -41,18 +41,18 @@ def plot_values(values_array):
     x_values, amplitude_values, current_values = values_array[0], values_array[1], values_array[2]
 
     # Amplitude vs Frequency Graph
-    plt.plot(x_values, amplitude_values)
-    plt.title('Simple Resonance Graph', fontsize=18)
-    plt.xlabel(f'Frequency [Hz]', fontsize=18)
-    plt.ylabel(f'Amplitude', fontsize=18)
-    plt.plot()
+    #plt.plot(x_values, amplitude_values)
+    #plt.title('Simple Resonance Graph', fontsize=18, fontweight='bold')
+    #plt.xlabel(f'Frequency [Hz]', fontsize=18, fontweight='bold')
+    #plt.ylabel(f'Amplitude', fontsize=18, fontweight='bold')
+    #plt.plot()
 
     # Current vs Frequency Graph
-    #plt.plot(x_values, current_values)
-    #plt.title('RCL Current Resonance Graph', fontsize=18)
-    #plt.xlabel(f'Frequency [Hz]', fontsize=18)
-    #plt.ylabel(f'Current [Amps]', fontsize=18)
-    #plt.plot()
+    plt.plot(x_values, current_values)
+    plt.title('RCL Current Resonance Graph', fontsize=18, fontweight='bold')
+    plt.xlabel(f'Frequency [Hz]', fontsize=18, fontweight='bold')
+    plt.ylabel(f'Current [Amps]', fontsize=18, fontweight='bold')
+    plt.plot()
     plt.show()
 
 print(plot_values(calculate_y_values(resonant_freq, amplitude_constant)))

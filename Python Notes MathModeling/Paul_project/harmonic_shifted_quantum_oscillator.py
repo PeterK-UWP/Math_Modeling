@@ -47,7 +47,7 @@ def recursion_relation(indicial_terms, eigenvalue):
 
 
 def plot_expansion(coefficients):
-    xi = np.linspace(-10, 10, 1000)
+    xi = np.linspace(-1, 1, 100)
     psi_array = []
     # for i coef do a_i*xi**i
     for i in xi:
@@ -58,7 +58,7 @@ def plot_expansion(coefficients):
     x_label = plt.xlabel('xi')
     y_label = plt.ylabel('psi')
     plt.plot(xi, psi_array)
-    plt.ylim([-1, 1])
+    #plt.ylim([-1, 1])
     plt.show()
     return psi_array
 
@@ -76,7 +76,7 @@ if __name__ == '__main__':
     a_1 = 0
     # eigenvalue should be 0.5, (bell curve)
     # then set a_0 = 0, a_1 = 1, and search for another value
-    eigenvalue = 2.4   # (epsilon - shift_xi^2/2)
+    eigenvalue = 0.5   # (epsilon - shift_xi^2/2)
     shift_xi = 0
     epsilon = eigenvalue + shift_xi**2/2
     print(f'a_2 = {indicial_equations(eigenvalue)[0]},'
